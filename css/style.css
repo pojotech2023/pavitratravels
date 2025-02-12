@@ -540,3 +540,24 @@ object-fit: cover;
     background-color: #128c7e;
     /* Darker green on hover */
 }
+.store-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Ensures all items are of equal height */
+  }
+  
+  .store-item img {
+    width: 100%;
+    height: 250px; /* Set a fixed height or use 'min-height' to maintain aspect ratio */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+  }
+  
+  .store-item .p-4 {
+    flex-grow: 1; /* Ensures text container takes up remaining space evenly */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
